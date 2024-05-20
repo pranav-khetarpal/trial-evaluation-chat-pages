@@ -5,7 +5,7 @@ ThemeData theme = ThemeData(
     background: Colors.white,
     primary: Colors.blue,
     secondary: Colors.black,
-    tertiary: const Color.fromARGB(255, 229, 124, 58),
-    inversePrimary: Colors.grey.shade700,
+    tertiary: Colors.red,
+    inversePrimary: Colors.grey.shade600,
   )
 );
