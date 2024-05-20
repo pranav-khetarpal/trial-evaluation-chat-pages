@@ -61,7 +61,7 @@ class ListOfChats extends StatelessWidget {
       body: Column(
         children: [
           // add a divider
-          Divider(height: 1, color: Theme.of(context).colorScheme.onBackground),
+          Divider(height: 1, color: Colors.grey.shade400),
           const SizedBox(height: 25,),
 
           // search bar to see existing chats
@@ -91,8 +91,7 @@ class ListOfChats extends StatelessWidget {
           ),
 
           // add a divider
-          Divider(height: 1, color: Theme.of(context).colorScheme.onBackground),
-          const SizedBox(height: 15,),
+          Divider(height: 1, color: Colors.grey.shade400),
 
           // chats with the 10 existing ones
           Expanded(

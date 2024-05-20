@@ -152,8 +152,9 @@ class ChatPage extends StatelessWidget {
                 // displaying messager name
                 Text(
                   receiver,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Theme.of(context).colorScheme.background,
                   ),
                 ),
               ],
@@ -193,20 +194,12 @@ class ChatPage extends StatelessWidget {
         children: [
           // display all messages
           Expanded(
-            child: Container(
-              margin: const EdgeInsets.all(10),
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                border: Border.all(color: Theme.of(context).colorScheme.secondary),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: ListView.builder(
-                itemCount: givenMessages.length,
-                itemBuilder: (context, index) {
-                  return _buildMessage(givenMessages[index], context);
-                },
-              ), // need to display givenMessages as a list,
-            ),
+            child: ListView.builder(
+              itemCount: givenMessages.length,
+              itemBuilder: (context, index) {
+                return _buildMessage(givenMessages[index], context);
+              },
+            ), // need to display givenMessages as a list,
           ),
 
           // get message input
